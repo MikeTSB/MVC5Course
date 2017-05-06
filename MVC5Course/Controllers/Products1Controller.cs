@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MVC5Course.Models;
+using MVC5Course.Models.ViewModel;
 
 namespace MVC5Course.Controllers
 {
@@ -114,6 +115,15 @@ namespace MVC5Course.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult ListProducts()
+        {
+
+            
+
+            return View();  
+
+        }
+
 
         protected override void Dispose(bool disposing)
         {
